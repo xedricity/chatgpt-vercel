@@ -18,7 +18,7 @@ export default function Setting(props: {
           }}
         >
           <button class="i-carbon:settings" />
-          <span ml-1>设置</span>
+          <span ml-1>settings</span>
         </div>
         <div class="flex">
           <div
@@ -26,14 +26,14 @@ export default function Setting(props: {
             onClick={props.reAnswer}
           >
             <button class="i-carbon:reset" />
-            <span ml-1>重新回答</span>
+            <span ml-1>Regenerate response</span>
           </div>
           <div
             class="flex items-center cursor-pointer ml-3 hover:text-slate-3 "
             onClick={props.clear}
           >
             <button class="i-carbon:trash-can" />
-            <span ml-1>清空对话</span>
+            <span ml-1>Clear conversation</span>
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@ export default function Setting(props: {
         <div class="flex items-center hover:text-slate-3 mt-2 justify-between">
           <div class="flex items-center">
             <button class="i-carbon:user-online" />
-            <span ml-1>系统角色指令</span>
+            <span ml-1>System Role</span>
           </div>
           <input
             type="text"
@@ -76,7 +76,7 @@ export default function Setting(props: {
         <div class="flex items-center hover:text-slate-3 mt-2 justify-between">
           <div class="flex items-center">
             <button class="i-carbon:data-enrichment" />
-            <span ml-1>思维发散程度</span>
+            <span ml-1>Degree of Thinking</span>
           </div>
           <input
             type="range"
@@ -97,7 +97,7 @@ export default function Setting(props: {
         <div class="flex items-center hover:text-slate-3 mt-2 justify-between">
           <div class="flex items-center">
             <button class="i-carbon:save-image" />
-            <span ml-1>记录对话内容，刷新不会消失</span>
+            <span ml-1>record conversation content, refreshing will not make it disappear</span>
           </div>
           <label class="relative inline-flex items-center cursor-pointer ml-1">
             <input
@@ -117,7 +117,7 @@ export default function Setting(props: {
         <div class="flex items-center hover:text-slate-3 mt-2 justify-between">
           <div class="flex items-center">
             <button class="i-carbon:3d-curve-auto-colon" />
-            <span ml-1>开启连续对话，将加倍消耗 Token</span>
+            <span ml-1>Enable continuous conversation will double the token consumption</span>
           </div>
           <label class="relative inline-flex items-center cursor-pointer ml-1">
             <input
