@@ -144,7 +144,7 @@ export default function () {
     }
     const data = response.body
     if (!data) {
-      throw new Error("没有返回数据")
+      throw new Error("no data returned")
     }
     const reader = data.getReader()
     const decoder = new TextDecoder("utf-8")
@@ -211,12 +211,12 @@ export default function () {
           when={!loading()}
           fallback={() => (
             <div class="h-12 my-4 flex items-center justify-center bg-slate bg-op-15 text-slate rounded">
-              <span>AI 正在思考...</span>
+              <span>AI is writing..</span>
               <div
                 class="ml-1em px-2 py-0.5 border border-slate text-slate rounded-md text-sm op-70 cursor-pointer hover:bg-slate/10"
                 onClick={stopStreamFetch}
               >
-                不需要了
+                no longer needed
               </div>
             </div>
           )}
@@ -225,7 +225,7 @@ export default function () {
             <textarea
               ref={inputRef!}
               id="input"
-              placeholder="与 ta 对话吧"
+              placeholder="have a conversation with GPT"
               autocomplete="off"
               autofocus
               onKeyDown={e => {
@@ -271,7 +271,7 @@ export default function () {
               }}
             >
               <button
-                title="发送"
+                title="send"
                 onClick={() => handleButtonClick()}
                 class="i-carbon:send-filled text-5 mx-3 hover:text-slate-2"
               />
